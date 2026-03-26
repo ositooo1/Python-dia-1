@@ -74,16 +74,15 @@ os.system("cls")
 #print(f"La letra 'a' aparece {contador} veces en la palabra.")
 #8. Integrador: Escribe un programa que permita a un usuario crear una lista de nombres. El programa continuará pidiendo nombres hasta que el usuario ingrese "fin". Luego,  el programa mostrará la lista de nombres en orden alfabético, indicará cuántos nombres empiezan con la letra 'A' o 'E',  y mostrará si un nombre específico está en la lista.
 
-lista_nombres = []
-while True:
-    nombre = input("Ingresa un nombre (o 'fin' para terminar): ")
-    if nombre.lower() == "fin":
-        break
-    lista_nombres.append(nombre)
-lista_nombres.sort()
-print("Lista de nombres en orden alfabético:")
-for nombre in lista_nombres:
-    print(f"- {nombre}")
-    #StartSwitch es god, lo descubri buscando en funciones de python
-contador_a = sum(1 for nombre in lista_nombres if nombre.lower().startswith(('a', 'e')))
-print(f"Nombres que empiezan con 'A' o 'E': {contador_a}")
+#lista_nombres = []
+#while True:
+#    nombre = input("Ingresa un nombre (o 'fin' para terminar): ")
+#    if nombre.lower() == "fin":
+#        break
+#    lista_nombres.append(nombre)
+#lista_nombres.sort()
+#print("Lista de nombres en orden alfabético:")
+#for nombre in lista_nombres:
+#    print(f"- {nombre}")
+#contador_a = sum(1 for nombre in lista_nombres if nombre.lower().startswith(('a', 'e')))
+#print(f"Nombres que empiezan con 'A' o 'E': {contador_a}")
